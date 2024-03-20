@@ -138,6 +138,543 @@ constructing characteristic AI agents.
 
 
 
+<section class="section" id="Table">
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+    
+        <table id="tg-mXKUT" class="tg">
+          <thead>
+            <th>ModelName</th>
+            <th>BLEU-1</th>
+            <th>BLEU-2</th>
+            <th>BLEU-3</th>
+            <th>BLEU-4</th>
+            <th>ROUGE-L</th>
+            <th>SemanticSim</th>
+            <th>Hit@1</th>
+            <th>Hit@3</th>
+            <th>Hit@5</th>
+            </thead>
+            
+            <tbody>
+            <tr>
+            <td class="tg-835b">Llama 2-7B-Base(Zero-Shot)</td>
+            <td class="tg-z9ml">0.080</td>
+            <td class="tg-z9ml">0.043</td>
+            <td class="tg-z9ml">0.028</td>
+            <td class="tg-z9ml">0.019</td>
+            <td class="tg-z9ml">0.114</td>
+            <td class="tg-z9ml">0.435</td>
+            <td class="tg-z9ml">0.365</td>
+            <td class="tg-z9ml">0.447</td>
+            <td class="tg-z9ml">0.485</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">Llama 2-7B-Chat(Zero-Shot)</td>
+            <td class="tg-z9ml">0.157</td>
+            <td class="tg-z9ml">0.111</td>
+            <td class="tg-z9ml">0.086</td>
+            <td class="tg-z9ml">0.069</td>
+            <td class="tg-z9ml">0.209</td>
+            <td class="tg-z9ml">0.510</td>
+            <td class="tg-z9ml">0.368</td>
+            <td class="tg-z9ml">0.473</td>
+            <td class="tg-z9ml">0.519</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">ChatGLM2-6B(Zero-Shot)</td>
+            <td class="tg-2sb0">0.331</td>
+            <td class="tg-z9ml">0.271</td>
+            <td class="tg-z9ml">0.232</td>
+            <td class="tg-z9ml">0.202</td>
+            <td class="tg-z9ml">0.361</td>
+            <td class="tg-z9ml">0.636</td>
+            <td class="tg-z9ml">0.338</td>
+            <td class="tg-z9ml">0.429</td>
+            <td class="tg-z9ml">0.473</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">Vicuna-7B-v1.5(Zero-Shot)</td>
+            <td class="tg-z9ml">0.263</td>
+            <td class="tg-z9ml">0.208</td>
+            <td class="tg-z9ml">0.173</td>
+            <td class="tg-z9ml">0.146</td>
+            <td class="tg-z9ml">0.287</td>
+            <td class="tg-z9ml">0.547</td>
+            <td class="tg-z9ml">0.322</td>
+            <td class="tg-z9ml">0.406</td>
+            <td class="tg-z9ml">0.444</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">Baichuan2-7B-Base(Zero-Shot)</td>
+            <td class="tg-z9ml">0.024</td>
+            <td class="tg-z9ml">0.006</td>
+            <td class="tg-z9ml">0.002</td>
+            <td class="tg-z9ml">0.001</td>
+            <td class="tg-z9ml">0.037</td>
+            <td class="tg-z9ml">0.336</td>
+            <td class="tg-z9ml">0.255</td>
+            <td class="tg-z9ml">0.341</td>
+            <td class="tg-z9ml">0.382</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">Baichuan2-7B-Chat(Zero-Shot)</td>
+            <td class="tg-z9ml">0.089</td>
+            <td class="tg-z9ml">0.053</td>
+            <td class="tg-z9ml">0.036</td>
+            <td class="tg-z9ml">0.027</td>
+            <td class="tg-z9ml">0.125</td>
+            <td class="tg-z9ml">0.483</td>
+            <td class="tg-z9ml">0.413</td>
+            <td class="tg-z9ml">0.504</td>
+            <td class="tg-z9ml">0.546</td>
+            </tr>
+            <tr>
+            <td class="tg-835b">ChatGPT(Zero-Shot)</td>
+            <td class="tg-z9ml">0.105</td>
+            <td class="tg-z9ml">0.086</td>
+            <td class="tg-z9ml">0.072</td>
+            <td class="tg-z9ml">0.061</td>
+            <td class="tg-z9ml">0.312</td>
+            <td class="tg-z9ml">0.723</td>
+            <td class="tg-2sb0">0.593</td>
+            <td class="tg-2sb0">0.671</td>
+            <td class="tg-2sb0">0.704</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.105</td>
+            <td class="tg-ubgs">0.067</td>
+            <td class="tg-ubgs">0.049</td>
+            <td class="tg-ubgs">0.038</td>
+            <td class="tg-ubgs">0.153</td>
+            <td class="tg-ubgs">0.488</td>
+            <td class="tg-ubgs">0.308</td>
+            <td class="tg-ubgs">0.392</td>
+            <td class="tg-ubgs">0.427</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.258</td>
+            <td class="tg-ubgs">0.208</td>
+            <td class="tg-ubgs">0.176</td>
+            <td class="tg-ubgs">0.152</td>
+            <td class="tg-ubgs">0.373</td>
+            <td class="tg-ubgs">0.666</td>
+            <td class="tg-ubgs">0.411</td>
+            <td class="tg-ubgs">0.517</td>
+            <td class="tg-ubgs">0.566</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.323</td>
+            <td class="tg-xu57">0.272</td>
+            <td class="tg-xu57">0.238</td>
+            <td class="tg-xu57">0.211</td>
+            <td class="tg-ubgs">0.376</td>
+            <td class="tg-ubgs">0.598</td>
+            <td class="tg-ubgs">0.472</td>
+            <td class="tg-ubgs">0.562</td>
+            <td class="tg-ubgs">0.597</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.321</td>
+            <td class="tg-ubgs">0.265</td>
+            <td class="tg-ubgs">0.227</td>
+            <td class="tg-ubgs">0.198</td>
+            <td class="tg-ubgs">0.409</td>
+            <td class="tg-ubgs">0.705</td>
+            <td class="tg-ubgs">0.406</td>
+            <td class="tg-ubgs">0.513</td>
+            <td class="tg-ubgs">0.557</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.025</td>
+            <td class="tg-ubgs">0.007</td>
+            <td class="tg-ubgs">0.003</td>
+            <td class="tg-ubgs">0.001</td>
+            <td class="tg-ubgs">0.040</td>
+            <td class="tg-ubgs">0.359</td>
+            <td class="tg-ubgs">0.173</td>
+            <td class="tg-ubgs">0.240</td>
+            <td class="tg-ubgs">0.273</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.101</td>
+            <td class="tg-ubgs">0.062</td>
+            <td class="tg-ubgs">0.043</td>
+            <td class="tg-ubgs">0.032</td>
+            <td class="tg-ubgs">0.152</td>
+            <td class="tg-ubgs">0.534</td>
+            <td class="tg-ubgs">0.326</td>
+            <td class="tg-ubgs">0.411</td>
+            <td class="tg-ubgs">0.450</td>
+            </tr>
+            <tr>
+            <td class="tg-i0fy">ChatGPT(Few-Shot)</td>
+            <td class="tg-ubgs">0.199</td>
+            <td class="tg-ubgs">0.169</td>
+            <td class="tg-ubgs">0.147</td>
+            <td class="tg-ubgs">0.129</td>
+            <td class="tg-xu57">0.502</td>
+            <td class="tg-xu57">0.794</td>
+            <td class="tg-ubgs">0.534</td>
+            <td class="tg-ubgs">0.620</td>
+            <td class="tg-ubgs">0.661</td>
+            </tr>
+            </tbody>
+    </table>
+          <p style="text-align: center;"> <i><b>Table 1:</b> The results of LLMs without fine-tuning.</i></p>
+    
+        <script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n?n.length:0}function t(n,t,e,o=0){for(e=r(n);o<e;++o)t(n[o],o)}function e(n){return n.split("").reverse().join("")}function o(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function u(n,r,e=[]){return t(n,function(n){r(n)&&e.push(n)}),e}var a=parseFloat;function i(n,r){return function(t){var e="";return t.replace(n,function(n,t,o){return e=t.replace(r,"")+"."+(o||"").substring(1)}),a(e)}}var s=i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),c=i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);function f(n){var t=a(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function d(n){var e=[],o=n;return t([f,s,c],function(u){var a=[],i=[];t(n,function(n,r){r=u(n),a.push(r),r||i.push(n)}),r(i)<r(o)&&(o=i,e=a)}),r(u(o,function(n){return n==o[0]}))==r(o)?e:[]}function v(n){if("TABLE"==n.nodeName){for(var a=function(r){var e,o,u=[],a=[];return function n(r,e){e(r),t(r.childNodes,function(r){n(r,e)})}(n,function(n){"TR"==(o=n.nodeName)?(e=[],u.push(e),a.push(n)):"TD"!=o&&"TH"!=o||e.push(n)}),[u,a]}(),i=a[0],s=a[1],c=r(i),f=c>1&&r(i[0])<r(i[1])?1:0,v=f+1,p=i[f],h=r(p),l=[],g=[],N=[],m=v;m<c;++m){for(var T=0;T<h;++T){r(g)<h&&g.push([]);var C=i[m][T],L=C.textContent||C.innerText||"";g[T].push(L.trim())}N.push(m-v)}t(p,function(n,t){l[t]=0;var a=n.classList;a.add("tg-sort-header"),n.addEventListener("click",function(){var n=l[t];!function(){for(var n=0;n<h;++n){var r=p[n].classList;r.remove("tg-sort-asc"),r.remove("tg-sort-desc"),l[n]=0}}(),(n=1==n?-1:+!n)&&a.add(n>0?"tg-sort-asc":"tg-sort-desc"),l[t]=n;var i,f=g[t],m=function(r,t){return n*f[r].localeCompare(f[t])||n*(r-t)},T=function(n){var t=d(n);if(!r(t)){var u=o(n),a=o(n.map(e));t=d(n.map(function(n){return n.substring(u,r(n)-a)}))}return t}(f);(r(T)||r(T=r(u(i=f.map(Date.parse),isNaN))?[]:i))&&(m=function(r,t){var e=T[r],o=T[t],u=isNaN(e),a=isNaN(o);return u&&a?0:u?-n:a?n:e>o?n:e<o?-n:n*(r-t)});var C,L=N.slice();L.sort(m);for(var E=v;E<c;++E)(C=s[E].parentNode).removeChild(s[E]);for(E=v;E<c;++E)C.appendChild(s[v+L[E-v]])})})}}n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{v(t[e])}catch(n){}})}(document)</script>
+    
+        </div>
+
+        <div class="content has-text-justified">
+    
+    <table id="tg-mXKUT" class="tg">
+<thead>
+<th>ModelName</th>
+<th>BLEU-1</th>
+<th>BLEU-2</th>
+<th>BLEU-3</th>
+<th>BLEU-4</th>
+<th>ROUGE-L</th>
+<th>SemanticSim</th>
+<th>Hit@1</th>
+<th>Hit@3</th>
+<th>Hit@5</th>
+</thead>
+<tbody>
+<tr>
+<td class="tg-835b">Llama 2-7B-Base(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.215</td>
+<td class="tg-z9ml">0.175</td>
+<td class="tg-z9ml">0.148</td>
+<td class="tg-z9ml">0.126</td>
+<td class="tg-z9ml">0.313</td>
+<td class="tg-z9ml">0.662</td>
+<td class="tg-2sb0">0.403</td>
+<td class="tg-z9ml">0.507</td>
+<td class="tg-2sb0">0.552</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Llama 2-7B-Base(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.210</td>
+<td class="tg-z9ml">0.172</td>
+<td class="tg-z9ml">0.145</td>
+<td class="tg-z9ml">0.124</td>
+<td class="tg-z9ml">0.307</td>
+<td class="tg-z9ml">0.661</td>
+<td class="tg-z9ml">0.410</td>
+<td class="tg-2sb0">0.508</td>
+<td class="tg-2sb0">0.552</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Llama 2-7B-Chat(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.128</td>
+<td class="tg-z9ml">0.086</td>
+<td class="tg-z9ml">0.064</td>
+<td class="tg-z9ml">0.050</td>
+<td class="tg-z9ml">0.177</td>
+<td class="tg-z9ml">0.496</td>
+<td class="tg-z9ml">0.297</td>
+<td class="tg-z9ml">0.383</td>
+<td class="tg-z9ml">0.424</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Llama 2-7B-Chat(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.378</td>
+<td class="tg-z9ml">0.331</td>
+<td class="tg-z9ml">0.295</td>
+<td class="tg-z9ml">0.266</td>
+<td class="tg-z9ml">0.509</td>
+<td class="tg-z9ml">0.762</td>
+<td class="tg-z9ml">0.364</td>
+<td class="tg-z9ml">0.466</td>
+<td class="tg-z9ml">0.509</td>
+</tr>
+
+<tr>
+<td class="tg-835b">ChatGLM2-6B(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.052</td>
+<td class="tg-z9ml">0.021</td>
+<td class="tg-z9ml">0.010</td>
+<td class="tg-z9ml">0.004</td>
+<td class="tg-z9ml">0.083</td>
+<td class="tg-z9ml">0.435</td>
+<td class="tg-z9ml">0.161</td>
+<td class="tg-z9ml">0.237</td>
+<td class="tg-z9ml">0.275</td>
+</tr>
+
+<tr>
+<td class="tg-835b">ChatGLM2-6B(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.056</td>
+<td class="tg-z9ml">0.023</td>
+<td class="tg-z9ml">0.010</td>
+<td class="tg-z9ml">0.005</td>
+<td class="tg-z9ml">0.086</td>
+<td class="tg-z9ml">0.445</td>
+<td class="tg-z9ml">0.156</td>
+<td class="tg-z9ml">0.232</td>
+<td class="tg-z9ml">0.271</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Vicuna-7B-v1.5(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.344</td>
+<td class="tg-z9ml">0.291</td>
+<td class="tg-z9ml">0.252</td>
+<td class="tg-z9ml">0.220</td>
+<td class="tg-z9ml">0.459</td>
+<td class="tg-z9ml">0.754</td>
+<td class="tg-z9ml">0.367</td>
+<td class="tg-z9ml">0.466</td>
+<td class="tg-z9ml">0.514</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Vicuna-7B-v1.5(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.352</td>
+<td class="tg-z9ml">0.298</td>
+<td class="tg-z9ml">0.257</td>
+<td class="tg-z9ml">0.225</td>
+<td class="tg-z9ml">0.462</td>
+<td class="tg-z9ml">0.754</td>
+<td class="tg-z9ml">0.347</td>
+<td class="tg-z9ml">0.448</td>
+<td class="tg-z9ml">0.495</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Baichuan2-7B-Base(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.030</td>
+<td class="tg-z9ml">0.009</td>
+<td class="tg-z9ml">0.003</td>
+<td class="tg-z9ml">0.001</td>
+<td class="tg-z9ml">0.049</td>
+<td class="tg-z9ml">0.453</td>
+<td class="tg-z9ml">0.224</td>
+<td class="tg-z9ml">0.302</td>
+<td class="tg-z9ml">0.344</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Baichuan2-7B-Base(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.051</td>
+<td class="tg-z9ml">0.025</td>
+<td class="tg-z9ml">0.015</td>
+<td class="tg-z9ml">0.009</td>
+<td class="tg-z9ml">0.082</td>
+<td class="tg-z9ml">0.509</td>
+<td class="tg-z9ml">0.305</td>
+<td class="tg-z9ml">0.396</td>
+<td class="tg-z9ml">0.439</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Baichuan2-7B-Chat(Zero-Shot, LoRA)</td>
+<td class="tg-z9ml">0.028</td>
+<td class="tg-z9ml">0.006</td>
+<td class="tg-z9ml">0.001</td>
+<td class="tg-z9ml">0.000</td>
+<td class="tg-z9ml">0.039</td>
+<td class="tg-z9ml">0.382</td>
+<td class="tg-z9ml">0.307</td>
+<td class="tg-z9ml">0.405</td>
+<td class="tg-z9ml">0.449</td>
+</tr>
+
+<tr>
+<td class="tg-835b">Baichuan2-7B-Chat(Zero-Shot, QLoRA)</td>
+<td class="tg-z9ml">0.078</td>
+<td class="tg-z9ml">0.044</td>
+<td class="tg-z9ml">0.029</td>
+<td class="tg-z9ml">0.021</td>
+<td class="tg-z9ml">0.116</td>
+<td class="tg-z9ml">0.486</td>
+<td class="tg-z9ml">0.401</td>
+<td class="tg-z9ml">0.501</td>
+<td class="tg-z9ml">0.548</td>
+</tr>
+<tr>
+<td class="tg-i0fy">Llama 2-7B-Base(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.213</td>
+<td class="tg-ubgs">0.173</td>
+<td class="tg-ubgs">0.145</td>
+<td class="tg-ubgs">0.124</td>
+<td class="tg-ubgs">0.310</td>
+<td class="tg-ubgs">0.614</td>
+<td class="tg-ubgs">0.354</td>
+<td class="tg-ubgs">0.449</td>
+<td class="tg-ubgs">0.493</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Llama 2-7B-Base(Few-Shot, QLoRA)</td>
+<td class="tg-ubgs">0.210</td>
+<td class="tg-ubgs">0.169</td>
+<td class="tg-ubgs">0.141</td>
+<td class="tg-ubgs">0.120</td>
+<td class="tg-ubgs">0.284</td>
+<td class="tg-ubgs">0.578</td>
+<td class="tg-ubgs">0.326</td>
+<td class="tg-ubgs">0.406</td>
+<td class="tg-ubgs">0.443</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Llama 2-7B-Chat(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.199</td>
+<td class="tg-ubgs">0.149</td>
+<td class="tg-ubgs">0.118</td>
+<td class="tg-ubgs">0.097</td>
+<td class="tg-ubgs">0.287</td>
+<td class="tg-ubgs">0.602</td>
+<td class="tg-ubgs">0.272</td>
+<td class="tg-ubgs">0.359</td>
+<td class="tg-ubgs">0.404</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Llama 2-7B-Chat(Few-Shot, QLoRA)</td>
+<td class="tg-xu57">0.530</td>
+<td class="tg-xu57">0.474</td>
+<td class="tg-xu57">0.430</td>
+<td class="tg-xu57">0.393</td>
+<td class="tg-xu57">0.590</td>
+<td class="tg-xu57">0.797</td>
+<td class="tg-ubgs">0.366</td>
+<td class="tg-ubgs">0.467</td>
+<td class="tg-ubgs">0.513</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">ChatGLM2-6B(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.040</td>
+<td class="tg-ubgs">0.015</td>
+<td class="tg-ubgs">0.006</td>
+<td class="tg-ubgs">0.003</td>
+<td class="tg-ubgs">0.066</td>
+<td class="tg-ubgs">0.391</td>
+<td class="tg-ubgs">0.157</td>
+<td class="tg-ubgs">0.233</td>
+<td class="tg-ubgs">0.272</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">ChatGLM2-6B(Few-Shot, QLoRA)</td>
+<td class="tg-ubgs">0.042</td>
+<td class="tg-ubgs">0.016</td>
+<td class="tg-ubgs">0.007</td>
+<td class="tg-ubgs">0.003</td>
+<td class="tg-ubgs">0.069</td>
+<td class="tg-ubgs">0.399</td>
+<td class="tg-ubgs">0.146</td>
+<td class="tg-ubgs">0.222</td>
+<td class="tg-ubgs">0.261</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Vicuna-7B-v1.5(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.416</td>
+<td class="tg-ubgs">0.357</td>
+<td class="tg-ubgs">0.312</td>
+<td class="tg-ubgs">0.276</td>
+<td class="tg-ubgs">0.508</td>
+<td class="tg-ubgs">0.770</td>
+<td class="tg-ubgs">0.379</td>
+<td class="tg-ubgs">0.479</td>
+<td class="tg-ubgs">0.524</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Vicuna-7B-v1.5(Few-Shot, QLoRA)</td>
+<td class="tg-ubgs">0.407</td>
+<td class="tg-ubgs">0.346</td>
+<td class="tg-ubgs">0.301</td>
+<td class="tg-ubgs">0.264</td>
+<td class="tg-ubgs">0.500</td>
+<td class="tg-ubgs">0.770</td>
+<td class="tg-ubgs">0.373</td>
+<td class="tg-ubgs">0.473</td>
+<td class="tg-ubgs">0.524</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Baichuan2-7B-Base(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.027</td>
+<td class="tg-ubgs">0.008</td>
+<td class="tg-ubgs">0.002</td>
+<td class="tg-ubgs">0.000</td>
+<td class="tg-ubgs">0.043</td>
+<td class="tg-ubgs">0.419</td>
+<td class="tg-ubgs">0.167</td>
+<td class="tg-ubgs">0.240</td>
+<td class="tg-ubgs">0.279</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Baichuan2-7B-Base(Few-Shot, QLoRA)</td>
+<td class="tg-ubgs">0.046</td>
+<td class="tg-ubgs">0.023</td>
+<td class="tg-ubgs">0.014</td>
+<td class="tg-ubgs">0.009</td>
+<td class="tg-ubgs">0.073</td>
+<td class="tg-ubgs">0.476</td>
+<td class="tg-ubgs">0.255</td>
+<td class="tg-ubgs">0.335</td>
+<td class="tg-ubgs">0.378</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Baichuan2-7B-Chat(Few-Shot, LoRA)</td>
+<td class="tg-ubgs">0.032</td>
+<td class="tg-ubgs">0.009</td>
+<td class="tg-ubgs">0.002</td>
+<td class="tg-ubgs">0.000</td>
+<td class="tg-ubgs">0.049</td>
+<td class="tg-ubgs">0.420</td>
+<td class="tg-ubgs">0.238</td>
+<td class="tg-ubgs">0.315</td>
+<td class="tg-ubgs">0.359</td>
+</tr>
+
+<tr>
+<td class="tg-i0fy">Baichuan2-7B-Chat(Few-Shot, QLoRA)</td>
+<td class="tg-ubgs">0.095</td>
+<td class="tg-ubgs">0.058</td>
+<td class="tg-ubgs">0.040</td>
+<td class="tg-ubgs">0.030</td>
+<td class="tg-ubgs">0.147</td>
+<td class="tg-ubgs">0.527</td>
+<td class="tg-ubgs">0.328</td>
+<td class="tg-ubgs">0.416</td>
+<td class="tg-ubgs">0.456</td>
+</tr>
+</tbody>
+</table>
+      <p style="text-align: center;"> <i><b>Table 2:</b> The results of LLMs after fine-tuning.</i></p>
+
+    <script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n?n.length:0}function t(n,t,e,o=0){for(e=r(n);o<e;++o)t(n[o],o)}function e(n){return n.split("").reverse().join("")}function o(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function u(n,r,e=[]){return t(n,function(n){r(n)&&e.push(n)}),e}var a=parseFloat;function i(n,r){return function(t){var e="";return t.replace(n,function(n,t,o){return e=t.replace(r,"")+"."+(o||"").substring(1)}),a(e)}}var s=i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),c=i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);function f(n){var t=a(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function d(n){var e=[],o=n;return t([f,s,c],function(u){var a=[],i=[];t(n,function(n,r){r=u(n),a.push(r),r||i.push(n)}),r(i)<r(o)&&(o=i,e=a)}),r(u(o,function(n){return n==o[0]}))==r(o)?e:[]}function v(n){if("TABLE"==n.nodeName){for(var a=function(r){var e,o,u=[],a=[];return function n(r,e){e(r),t(r.childNodes,function(r){n(r,e)})}(n,function(n){"TR"==(o=n.nodeName)?(e=[],u.push(e),a.push(n)):"TD"!=o&&"TH"!=o||e.push(n)}),[u,a]}(),i=a[0],s=a[1],c=r(i),f=c>1&&r(i[0])<r(i[1])?1:0,v=f+1,p=i[f],h=r(p),l=[],g=[],N=[],m=v;m<c;++m){for(var T=0;T<h;++T){r(g)<h&&g.push([]);var C=i[m][T],L=C.textContent||C.innerText||"";g[T].push(L.trim())}N.push(m-v)}t(p,function(n,t){l[t]=0;var a=n.classList;a.add("tg-sort-header"),n.addEventListener("click",function(){var n=l[t];!function(){for(var n=0;n<h;++n){var r=p[n].classList;r.remove("tg-sort-asc"),r.remove("tg-sort-desc"),l[n]=0}}(),(n=1==n?-1:+!n)&&a.add(n>0?"tg-sort-asc":"tg-sort-desc"),l[t]=n;var i,f=g[t],m=function(r,t){return n*f[r].localeCompare(f[t])||n*(r-t)},T=function(n){var t=d(n);if(!r(t)){var u=o(n),a=o(n.map(e));t=d(n.map(function(n){return n.substring(u,r(n)-a)}))}return t}(f);(r(T)||r(T=r(u(i=f.map(Date.parse),isNaN))?[]:i))&&(m=function(r,t){var e=T[r],o=T[t],u=isNaN(e),a=isNaN(o);return u&&a?0:u?-n:a?n:e>o?n:e<o?-n:n*(r-t)});var C,L=N.slice();L.sort(m);for(var E=v;E<c;++E)(C=s[E].parentNode).removeChild(s[E]);for(E=v;E<c;++E)C.appendChild(s[v+L[E-v]])})})}}n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{v(t[e])}catch(n){}})}(document)</script>
+
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -167,8 +704,7 @@ constructing characteristic AI agents.
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            Template by <a
-              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            Template by <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>. Tables borrowed from <a href="https://github.com/zhichengg/stb.github.io">zhicehngg</a>.
           </p>
         </div>
       </div>
